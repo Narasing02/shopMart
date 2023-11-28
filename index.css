@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.Hamburger{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    display:none;
+    transition: all 0.3s ease-in;
+
+}
+.Hamburger .line1{
+    width:30px;
+   background-color:#fff;
+   border:1px solid #fff;
+
+}
+.Hamburger .line2{
+    width:30px;
+   background-color:#fff;
+   border:1px solid #fff;
+
+}
+.Hamburger .line3{
+    width:30px;
+   background-color:#fff;
+   border:1px solid #fff;
+
+}
+.Hamburger div{
+    transition: all 0.3s ease-in;
+
+}
+
+.nav-links{
+    cursor:pointer;
+  
+}
+
+@media(max-width:900px){
+    .Hamburger{
+        display: block;
+        display: flex;
+    flex-direction: column;
+    gap:5px;
+    }
+   nav ul{
+    position:absolute;
+    top:38px;
+    height:60vh;
+    right:0;
+    background-color:#211c1c;
+    width:100%;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition:all 0.5s ease-in;
+    }
+     .nav-active{
+        transform:translateX(0);
+      }
+     
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px );
+}
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+    
+
+}
+
+/* --------------------------------------Home------------------------------------------- */
+
+
+.home{
+    background-image: url("https://media.istockphoto.com/id/1409236261/photo/healthy-food-healthy-eating-background-fruit-vegetable-berry-vegetarian-eating-superfood.webp?s=2048x2048&w=is&k=20&c=AOJUGUDXqr7aYJhvW4-6sf1vzaUmBO1q3bRE5HBcEVs=");
+    background-size: cover;
+    height:85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:10px;
+}
+.home-container{
+    background-color: rgb(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color:#fff;
+    width:40%;
+    height:200px;
+    
+}
+
+
+@media(max-width:1200px){
+    .home{
+        height:60vh;
+        background-position: center;
+    }
+}
+
+@media(max-width:900px){
+    .home-container{
+        width:90%;
+    }
+    
+}
+
+@media(max-width:370px){
+    .home-container{
+        width:90%;
+        height:50%;
+    }
+   
+}
+/* ---------------------------------------------Item-section------------------------------------------------ */
+.item-section{
+    background-image: url('https://cdn.pixabay.com/photo/2016/04/19/21/30/strawberries-1339969_1280.jpg');
+    background-size: cover;
+    padding:50px;
+}
+
+/* .item-section form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.item-section form div {
+    display:flex;
+    gap:20px;
+} */
+
+#submitContainer{
+    padding-top:20px;
+}
+
+.button1{
+    
+    background-color: transparent;
+    color:#ffffff;
+    border:2px solid #096df1;
+    width:200px;
+    font-size:20px;
+    transition: 0.3s ease-in;
+}
+.button1:hover{
+   max-width:250px;
+  
+   border-radius: 10px;
+   height:max-content;
+    background-color:#096af1;
+}
+
+.payment-container{
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/26/17/50/umbrella-2891882_1280.jpg');
+    background-size: cover;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+   display:none;
+  
+}
+
+.payment-container1{
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/26/17/50/umbrella-2891882_1280.jpg');
+    background-size: cover;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+.form-data-container{
+   
+    border-radius: 10px;
+    background:linear-gradient(to left,#fff,#fffffe);
+    border:2px solid #15f109;
+    color:#100d0d;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  
+
+}
+
+.form-data-container h2{
+    
+    color:#151515;
+
+}
+.payment-main-cont{
+    background-color: #fff;
+    padding:40px;
+    border-radius: 10px;
+
+}
+.payment-img-container{
+    max-width:300px;
+}
+@media(max-width:900px){
+    .payment-container1{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:400px){
+
+}
